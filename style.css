@@ -1,0 +1,34 @@
+    p{font-family: Arial, Helvetica, sans-serif; }  
+    h1{color:rgb(95, 67, 14)}
+    h1:hover {background-color: darkgoldenrod;}
+    
+
+    #paragraphe1 {/*un selecteur commancçant par "# vise un identiftiant (unique */
+        font-size: larger;
+    }
+
+    .surlignage { /* Même principe avec "." pour une classe */
+        background-color: rgb(255, 236, 131);
+    }
+
+
+    .couleur_de_texte_bleu {color: rgb(46, 46, 255);}
+
+    p .couleur_de_texte_bleu{ /* On vise toute balise portabt la classe "couleur de texte bleu" et se trouvant DANS un paragraphe (l'espace vert servant strictement a ca dans un selecteur*/
+text-decoration: line-through;
+
+}
+/* Ce qui est différent de */
+p.couleur_de_texte_bleu {
+
+    /* On vise tout paragraphe portant la classe "couleur de texte bleu" */
+
+
+}
+
+/* On peut aussi viser des éléments à condition qu'ils soient dans un certaint "état" (par exemple survolés par le curseur de la souris" : */
+.surlignage:hover {
+
+    background-color: blueviolet;
+}
+
